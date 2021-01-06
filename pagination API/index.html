@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Pagination</title>
+    <link rel="stylesheet" type="text/css" href="css/pagination.css">
+    <script rel="stylesheet" href="bootstrap.min.css"></script>
+    <script rel="stylesheet" href="css/pagination.css"></script>
+
+    <title>Fetch API</title>
+</head>
+
+<body   class="container-fluid" onload="load(1,20)"  >
+    <h1 class="text-center">FETCH API</h1>
+
+    <input type="text" placeholder="Search" id="myInput" onkeyup="mySerach()">
+    <table classname="table-table-stripped ">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Trips</th>
+                <th>__V</th>
+                <th>Airline Id</th>
+                <th>Airline Name</th>
+                <th>Airline Country</th>
+                <th>Airline Logo</th>
+                <th>Airline Established</th>
+                <th>Airline HeadQuaters</th>
+                <th>Airline Slogan</th>
+                <th>Airline Website</th>
+            </tr>
+        </thead>
+
+    </table><br>
+    <br>
+    <div class="pagination">
+        <table id='table'>
+
+
+
+        </table>
+   
+
+    <div>
+        <button id="first" onclick="first()">First</button>
+        <button id="prev" onclick="prev()">
+            prev
+        </button>
+
+        <button id="next" onclick="next()" >
+            next
+        </button>
+        <button id="last" onclick="last()" >Last</button>
+    </div> 
+
+
+ 
+
+
+
+        <script type="text/javascript" src="js/pagination.js"></script>
+
+</body>
+
+</html>
